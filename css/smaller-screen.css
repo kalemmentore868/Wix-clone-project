@@ -1,0 +1,390 @@
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+    padding: 0 10px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header nav.active {
+    display: block;
+    position: absolute;
+    z-index: 600;
+    width: 100vw;
+    height: 200vh;
+    background-color: white;
+  }
+
+  header nav.active ul {
+    position: absolute;
+    left: -20px;
+    top: 100px;
+  }
+
+  header nav.active a {
+    font-size: 1.6rem;
+  }
+
+  #red-bg {
+    background-color: white !important;
+    color: #da392b !important;
+  }
+
+  .toggle-box {
+    display: block;
+    justify-self: end;
+    position: relative;
+    z-index: 620;
+    top: 0;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  #cross {
+    display: none;
+    font-size: 40px;
+    background-color: #da392b;
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  #cross.active {
+    display: block;
+  }
+
+  #burger {
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  #burger.not-active {
+    display: none;
+  }
+
+  header li {
+    display: block;
+  }
+
+  .tripo {
+    padding: 5px;
+    font-size: 1.4rem;
+    margin-left: unset;
+  }
+
+  .down-arrow {
+    display: block;
+    font-size: 2rem;
+    margin-left: 120px;
+    font-weight: lighter;
+  }
+
+  .down-arrow.active {
+    transform: rotate(180deg);
+  }
+
+  .dropdown.gone {
+    display: none;
+  }
+
+  .dropdown {
+    position: unset;
+    bottom: unset;
+    margin-left: unset;
+    text-align: center;
+    background-color: white;
+    border-radius: 0;
+    box-shadow: unset;
+    font-size: 1.3rem;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .dropdown p {
+    padding: 16px 10px;
+  }
+
+  /* Hero Section */
+  #hero-section {
+    height: 60vh;
+    margin-top: -59px;
+    padding: 10px 0 0 10px;
+    background-size: cover;
+    background-position: bottom center;
+    margin-bottom: 20px;
+  }
+
+  #hero-section div {
+    margin-left: unset;
+  }
+
+  #hero-section div h1 {
+    font-size: 3rem;
+  }
+
+  #hero-section div p {
+    font-size: 1.2rem;
+    margin: 30px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+
+  /* Card */
+  .games-box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    z-index: unset;
+    margin-top: unset;
+    position: unset;
+    background-color: #f6f4f0;
+    padding: 40px 0px;
+    width: 100%;
+    margin-top: -26px;
+  }
+
+  .games-box img {
+    opacity: 1;
+  }
+
+  .red-effect {
+    display: none;
+  }
+
+  .games-box > div {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 55vh;
+  }
+
+  .last-card {
+    margin-bottom: 0;
+    width: 68%;
+    padding: unset;
+  }
+
+  /* About Section */
+
+  .about-tripo {
+    margin-top: -400px;
+  }
+
+  .about-tripo h2 {
+    margin-top: unset;
+  }
+
+  .big {
+    font-size: 1.5rem;
+  }
+
+  .small {
+    line-height: unset;
+  }
+
+  .small br {
+    display: none;
+  }
+
+  .center-pic {
+    height: 30vh;
+    width: 80vw;
+    background-position: center;
+    justify-items: center;
+    align-items: flex-end;
+  }
+
+  .center-pic img {
+    width: 150px;
+    margin: unset;
+    margin-bottom: -60px;
+  }
+
+  .about-tripo > h2 {
+    margin: 100px auto 30px auto;
+    font-size: 2.5rem;
+  }
+
+  .about-tripo > p {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .about-tripo > p br {
+    display: none;
+  }
+
+  .game-cards {
+    height: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 50px;
+    padding: 40px 10px;
+    background-position: top center;
+    background-size: 680px;
+  }
+
+  .game-cards > div {
+    background-color: white;
+    height: auto;
+    width: 80%;
+    border-radius: 20px;
+    padding: 40px 20px;
+  }
+
+  .game-cards .first-div {
+    margin-top: 500px;
+  }
+
+  .game-cards > div > span {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Join Our Team */
+
+  .join-our-team {
+    height: 75vh;
+    background-image: url("../img/red-dragon.webp");
+    background-position: center center;
+    background-size: cover;
+    padding: 25px 20px 0 20px;
+    color: white;
+  }
+
+  .join-our-team h2 {
+    margin-top: 30px;
+  }
+
+  .join-our-team p {
+    font-size: 2rem;
+  }
+
+  .join-our-team p br {
+    display: none;
+  }
+
+  .join-our-team img {
+    position: absolute;
+    bottom: 0px;
+    right: unset;
+    left: 0px;
+    width: 250px;
+  }
+
+  /* Form Section */
+
+  .form-section {
+    padding: 20px;
+    height: auto;
+  }
+
+  .big-form {
+    margin-top: unset;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 20px;
+    font-size: 1rem;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .small-form {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .small-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+
+  .small-form input {
+    width: 100%;
+    padding: unset;
+    height: 50px;
+    font-size: 1rem;
+    margin-right: unset;
+    margin-bottom: 15px;
+  }
+
+  .small-form button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Footer */
+
+  footer h2 {
+    padding: 0 10px;
+  }
+
+  footer > div {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: unset;
+    grid-template:
+      "contact contact"
+      "nav social"
+      "find find";
+    padding-left: 10px;
+    row-gap: 10px;
+  }
+
+  .contact {
+    grid-area: contact;
+  }
+
+  .footer-nav {
+    grid-area: nav;
+  }
+
+  .social {
+    grid-area: social;
+  }
+
+  .find {
+    grid-area: find;
+  }
+
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .last-card {
+    margin-bottom: 0;
+    width: 85%;
+    padding: unset;
+  }
+
+  .games-box > div {
+    margin-bottom: 70px;
+    width: 80%;
+    height: 50vh;
+  }
+}

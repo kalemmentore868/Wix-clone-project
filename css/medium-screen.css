@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+  header {
+    grid-template-columns: 2fr 5fr;
+  }
+
+  .link-list {
+    margin-left: 5vw;
+  }
+
+  header li {
+    padding: 20px 15px;
+  }
+
+  .game-cards {
+    column-gap: 50px;
+    row-gap: 80px;
+    padding: 20px 40px;
+  }
+
+  .game-cards > div {
+    height: 400px;
+    width: 60%;
+    padding: 20px;
+  }
+
+  .game-cards > div > span {
+    grid-template-columns: 1fr;
+  }
+
+  .small-form button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .small-form input {
+    width: 100%;
+    padding: unset;
+    height: 50px;
+    font-size: 1rem;
+    margin-right: unset;
+    margin-bottom: 15px;
+  }
+
+  .games-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 50px;
+    margin-top: 0;
+
+    background-color: #f6f4f0;
+    width: 100%;
+  }
+
+  .games-box > div {
+    height: 45vh;
+    margin-top: 20px;
+    width: 35vw;
+  }
+
+  .about-tripo h2 {
+    margin-top: 30px;
+  }
+}
